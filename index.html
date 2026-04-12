@@ -29,7 +29,7 @@
   <div class="hero-text">
     <h2>Hii, I Am Uday,<br> UI UX Designer</h2>
     <p>A creative designer focused on visual storytelling, digital design, and immersive portfolio experiences that leave impact.</p>
-    <a href="#" class="btn">Hire Me</a>
+    <a href="#info" class="btn">Hire Me</a>
   </div>
       
        <img class="" 
@@ -59,16 +59,21 @@ margin-top:20px;
 
 
 <style>
-    
+
+      
     .hero-text h2{font-size:50px;font-weight:700;line-height:1.05;letter-spacing:-2px;margin-bottom:24px}
+
     .hero-text h2 span{color:#7a7a7a;font-weight:400}
     .hero-text p{max-width:520px;color:#666;font-size:18px;margin-bottom:34px}
+
     .btn{display:inline-block;padding:14px 30px;border:1px solid #111;color:#111;text-decoration:none;border-radius:999px;transition:.3s;background:transparent}
     .btn:hover{background:#111;color:#fff}
 
     
 
-    .section-title{font-size:40px;//margin-bottom:48px;//font-weight:600;text-align:center;}
+         section{padding:70px 5%}
+
+    .section-title{font-size:40px;text-align:center;}
 
 
     .about-grid
@@ -76,9 +81,11 @@ margin-top:20px;
     {display:grid;grid-template-columns:1fr;gap:70px;text-align:center}
     .about-text p{color:#666;font-size:18px;max-width:540px}
 
+    
+    
+    //footer{text-align:center;padding:30px;color://#888;border-top:1px solid #f0f0f0}
 
-    @media(max-width:900px)
-    {
+    @media(max-width:900px){
       .hero{flex-direction:column;justify-content:center;text-align:center;padding-top:100px;gap:40px}
       .hero-text h2{font-size:46px}
       .about-grid{grid-template-columns:1fr}
@@ -88,11 +95,7 @@ margin-top:20px;
 footer
 
 
-footer #info, #sitemap, #socialmedia
-{
-width:100%;
-padding: 10px;
-}
+//about me text//
 
 #sitemap ul li #socialmedia ul li
 {
@@ -110,36 +113,6 @@ padding:10px;
 margin:auto;
 }
 
-
-header
-{
-//background:#000000;
-
-border:1px black solid;
-//height:300px;
-display:flex;
-//flex-direction:column;
-flex-direction:row;
-//justify-content:end;
-//justify-content:start;
-//justify-content:centre;end;
-justify-content: space-between;
-flex-wrap:wrap;
-
-}
-
-header {
-         border: 0px black solid;
-         display: flex;
-         flex-direction: row;
-         justify-content: space-between;
-         flex-wrap: wrap;
-        }
-
-main {
-        display: flex;
-        flex-wrap: wrap;
-        }
 
 
 /* home,practice,project,behance Navigation Styles */
@@ -172,7 +145,26 @@ transform:scale(1.10);
 }
 
 
- 
+ /* Footer & Social Media Styling (From Images) Bottom Box*/
+        footer {
+            background:#A9A9A9;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 200px;
+            clear: both;
+        }
+
+        footer #info, #sitemap, #socialmedia {
+            width: 100%;
+            padding: 10px;
+        }
+
+        /*#sitemap ul li, #socialmedia ul li {
+            list-style: none;
+            text-align: left;
+            margin-left: 40%;
+        }
 
 
 /* Link Text Styling */
@@ -210,7 +202,7 @@ a:active{colour:orange;}
 
 
  <div id="info">
-            <h1>ALL Right Reserved <sup>&reg;</sup></h1>
+            <h1>All Rights Reserved <sup>&reg;</sup></h1>
         </div>
 
         <div id="socialmedia">
