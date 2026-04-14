@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+
+
+<header>
+
+
+          <div id="col1">
+               <!-- profile pic -->
+               <img src="images/col1.png" class="pic" width="110%" height="100%" margin:auto;>
+
+
+          </div>
+          <div id="col2">
+                  <!-- banner -->
+                  <img src="images/col2.jpg" class="pic" width="350%" height="90%">
+
+
+          </div>
+
+</header>
+
+
+<h2><font colour="black"face="arial">Graphic Work</font></h2>
+
+
+<title>Graphic Work</title>
+
+
+<style>
+
+
+
+footer
+
+
+/* Footer & Social Media Styling (From Images) */
+{
+background:red;
+display: flex;
+flex-direction:column;
+text-align: center;
+margin-top: 200px;
+clear:both;
+}
+
+footer #info, #sitemap, #socialmedia
+{
+width:100%;
+padding: 10px;
+}
+
+#sitemap ul li #socialmedia ul li
+{
+list-style:none;
+text-align:left;
+margin-left: 40%;
+}
+
+
+
+div
+{
+border:0px black solid;
+padding:3px;
+margin:auto;
+}
+
+#col1
+{
+height:200px;
+width:50%;
+margin:10px'
+border-radius:100px;
+}
+
+#col2
+{
+width:60%;
+height:200px;
+margin:10px;
+}
+
+header
+{
+background:#000000;
+
+border:1px black solid;
+//height:300px;
+display:flex;
+//flex-direction:column;
+flex-direction:row;
+//justify-content:end;
+//justify-content:start;
+//justify-content:centre;end;
+justify-content: space-between;
+flex-wrap:wrap;
+
+}
+
+header {
+         border: 1px black solid;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         flex-wrap: wrap;
+        }
+
+main {
+        display: flex;
+        flex-wrap: wrap;
+        }
+
+.cardstyle /* Poster Images Box */
+{
+            width: 75%;
+            height: 500px;
+            box-shadow: 3px 3px 3px black;}
+
+.pic
+{
+width:100%;
+}
+
+/* home,practice,project,behance Navigation Styles */
+nav
+{
+width:60%;
+margin: 30px auto;
+//background:red;
+text-align: center;
+}
+
+
+nav ol li /* top Home,practice,project,behance BOX */
+{
+list-style:none;
+//background:linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(255, 237, 237, 1) 0%, rgba(255, 225, 173, 1) 100%);
+
+margin-right: 50px;
+padding: 15px;
+text-align: centre;
+cursor:pointer;
+box-shadow:0px 0px 0px black;
+transition:0.50s;
+}
+
+nav ol li:hover
+{
+background: #FDBB2D;
+transform:scale(1.10);
+}
+
+
+ /* Footer & Social Media Styling (From Images) Bottom Box*/
+        footer {
+            background: #FDBB2D;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 200px;
+            clear: both;
+        }
+
+        footer #info, #sitemap, #socialmedia {
+            width: 100%;
+            padding: 10px;
+        }
+
+        #sitemap ul li, #socialmedia ul li {
+            list-style: none;
+            text-align: left;
+            margin-left: 40%;
+        }
+
+
+/* Link Text Styling */
+a:link{colour:yellow;text-decoration:none;}
+a:visited{colour:yellow;}
+a:hover{text-decoration:underline; colour:red;}
+a:active{colour:orange;}
+
+
+ /* Media Queries */
+        @media only screen and (max-width: 600px) {
+            body { background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);}
+
+            #col2 { display: none; }
+            header { justify-content: center; }
+            .cardstyle { margin: 40px auto auto auto; }
+            nav ol li { display: block; }
+        }
+
+        @media only screen and (min-width: 600px) {
+            body { background: yellow; }
+            #col2 { width: 70%; }
+            #col1 { width: 100px; height: 40px; }
+            main { justify-content: center; }
+            .cardstyle { width: 40%; margin: 10px; }
+            nav ol li { display: inline; }
+        }
+
+        @media only screen and (min-width: 768px) {
+            body { background: pink; }
+            #col1 { width: 15%; height: 120px; }
+            #col2 { height: 200px; }
+            .cardstyle { width: 20%; margin: 10px; }
+        }
+
+        @media only screen and (min-width: 992px) {
+            body { background: linear-gradient(100deg, #fcff9e 0%, #c67700 100%); }
+            #col2 { width: 100%; height: 400px; margin: auto; }
+            #col1 { display: none; }
+        }
+
+
+</style>
+</head>
+<body>
+
+
+<nav>
+
+
+</div>
+<div id="sitemap">
+<ol>
+      <li><a href="uday portfolio.html">Home</a></li>
+      <li><a href="index.html">Practice work</a></li>
+      <li><a href="rwd2.html">Project</a></li>
+      <li><a href="https://www.behance.net/uday13">Behance</a></li>
+
+</ol>
+</nav>
+
+
+<main>
+
+<div class="cardstyle" id="card1"><img src="images/W1.png" class="pic" height="100%"></div>
+<div class="cardstyle" id="card2"><img src="images/W2.jpg" class="pic" height="100%"></div>
+<div class="cardstyle" id="card3"><img src="images/W3.jpg" class="pic" height="100%"></div>
+<div class="cardstyle" id="card4"><img src="images/W4.jpg" class="pic" height="100%"></div>
+<div class="cardstyle" id="card5"><img src="images/W5.jpg" class="pic" height="100%"></div>
+<div class="cardstyle" id="card6"><img src="images/W6.jpg" class="pic" height="100%"></div>
+<div class="cardstyle" id="card7"><img src="images/W7.jpg" class="pic" height="100%"></div>
+<div class="cardstyle" id="card8"><img src="images/W8.png" class="pic" height="100%"></div>
+<div class="cardstyle" id="card9"><img src="images/W9.png" class="pic" height="100%"></div>
+<div class="cardstyle" id="card10"><img src="images/W10.jpg" class="pic" height="100%"></div>
+
+
+
+</main>
+
+</body>
+
+<footer>
+
+
+ <div id="info">
+            <h1>ALL Right Reserved <sup>&reg;</sup></h1>
+        </div>
+
+        <div id="socialmedia">
+           
+                <summary>Social Media Handels</summary>
+                <ul>
+
+                    <il><a href="https://www.youtube.com/@designedbyuday/featured"><img src="images/youtube.png" alt="Youtube" style="width:50px"></a></il>
+
+
+                    <il><a href="https://www.instagram.com/designedbyuday/"><img src="images/instagram.png" alt="Instagram" style="width:50px;"></a></il>
+
+                    <il><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook" style="width:50px;"></a></il>
+
+                    <il><a href="https://x.com/"><img src="images/x.png" alt="Twitter" style="width:50px" height="45px"></a></il>
+
+                </ul>
+            
+        </div>
+
+
+</footer>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
