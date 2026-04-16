@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+
+<a href="practicepage.html">
+<img src="images/arrow.png" style="width:2%" title= "click to close">
+</a>
+
+
+<style>
+@keyframes runtext
+{
+   from{left:-500px;}
+   to{left:1400px;}
+}
+
+
+
+@keyframes changepic
+{
+10%{background-image:url(images/back5.jpeg);}
+20%{background-image:url(images/back6.jpeg);}
+30%{background-image:url(images/back7.jpeg);}
+40%{background-image:url(images/back8.jpeg);}
+50%{background-image:url(images/back1.jpg);}
+60%{background-image:url(images/back2.jpeg);}
+70%{background-image:url(images/back3.jpeg);}
+80%{background-image:url(images/back4.avif);}
+90%{background-image:url(images/back.jpg);}
+100%{background-image:url(images/blue.jpeg);}
+
+
+}
+@keyframes mycolor
+{
+10%{color;yellow;}
+30%{color;green;}
+50%{color;purple;}
+70%{color;cyan;}
+
+}
+
+
+header
+{
+background:black;
+background-image:url(images/);
+background-repeat:no-repeat;
+background-size:100% 100%;
+height:600px;
+colour:white;
+width:90%;
+margin:auto;
+overflow:hidden;
+animation:changepic 30s linear infinite;
+}
+
+#text
+{
+margin-top:30px;
+padding-top:30px;
+font-family:arial black;
+font-size:50px;
+color:yellow;
+text-shadow:5px 5px 5px black;
+text-transform:uppercase;
+//background:yellow;
+position:relative;
+left:-500px;
+top:100px;
+animation:runtext 20s linear infinite alternate, mycolor 2s infinite;
+}
+
+
+</style>
+
+<body>
+    <header>
+        <div id="text">Welcome to My Profile</div>
+    </header>
+</body>
+</html>
