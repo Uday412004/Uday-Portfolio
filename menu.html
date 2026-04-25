@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<link rel="stylesheet" href="" >
+<style>
+#menu
+{
+    box-shadow:3px 3px 3px gray;
+    background:black;
+    width:35px;
+    text-align:center;
+    cursor:pointer;
+    color:white;
+    text-align:left;
+}
+
+
+
+ol
+{
+    list-style:none;
+    display:none;
+}
+
+
+
+#menu:hover
+{
+    width:100px;
+}
+
+
+#menu:hover ol
+{
+    display:block;
+}
+
+
+li
+{
+    //background:red;
+    padding:10px;
+    cursor:pointer;
+    margin-left:-40px;
+    color:white;
+}
+
+li:hover
+{
+    background:cyan;
+}
+
+</style>
+<body>
+    
+      <main>
+         <div id="menu">
+           <span style="background:" class="material-symbols-outlined">menu</span>
+           <ol>
+               <li>Home</li>
+               <li>About</li>
+               <li>Contact</li>
+               <li>Products</li>
+               <li>Services</li>
+
+
+               </ol>
+
+
+
+             </div>
+
+      </main>
+
+</body>
+</html>

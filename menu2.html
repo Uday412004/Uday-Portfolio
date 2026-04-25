@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenuFlyout</title>
+</head>
+<link rel="stylesheet" href="" >
+<style>
+#menu
+{
+    background:orange;
+    width:35px;
+    height:20px;
+}
+ol
+{
+    background:darkolivegreen;
+    list-style:none;
+    transition:0.53s;
+    //margin-left:230px;
+    position:relative;
+    left:-200px;
+    top:-23px;
+}
+ol li
+{
+    padding:10px;
+    margin-left:-40px;
+
+}
+ol li :hover
+{
+    background:red;
+    color:white;
+}
+
+#menu:hover ol
+{
+    left:0px;
+    width:100px;
+    cursor:pointer;
+    
+}
+
+</style>
+<body>
+     <main>
+         <div id="menu"
+            <span style="background:rd" class="material-symbols-outlined">menu</span>
+            <ol>
+                 <li>Home</li>
+                 <li>About</li>
+                 <li>Contact</li>
+                 <li>Services</li>
+                 <li>Social Media</li>
+            </ol>
+
+        </div>
+
+
+     </main>
+</body>
+</html>
