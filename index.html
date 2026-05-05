@@ -42,7 +42,7 @@
   <div class="hero-text">
     <h2>Hii, I Am Uday,<br><span> UI UX Designer</h2>
     <p>A creative designer focused on visual storytelling, digital design, and immersive portfolio experiences that leave impact.</p>
-    <a href="#info" class="btn">Hire Me</a>
+    </a href="#info" class="btn"></a>
   </div>
       
        <img class="image"
@@ -92,7 +92,7 @@ margin-top:20px;
     .about-grid
 
     {display:grid;grid-template-columns:1fr;gap:70px;text-align:center}
-    .about-text p{color:#666;font-size:18px;max-width:540px}
+    .about-text p{color:#666;font-size:20px;max-width:1000px}
 
     
     
@@ -131,10 +131,13 @@ margin:auto;
 /* home,practice,project,behance Navigation Styles */
 nav
 {
-width:60%;
+width:100%;
 margin: 30px auto;
-//background:red;
+background:rgb(175, 175, 175);
 text-align: center;
+//display:flex;
+//justify-content:space-between;
+box-shadow:2px 3px 4px gray;
 }
 
 
@@ -143,9 +146,9 @@ nav ol li /* top Home,practice,project,behance BOX */
 list-style:none;
 //background:linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(255, 237, 237, 1) 0%, rgba(255, 225, 173, 1) 100%);
 
-margin-right: 50px;
-padding: 15px;
-text-align: centre;
+margin-right: 60px;
+padding: 10px;
+text-align: center;
 cursor:pointer;
 box-shadow:0px 0px 0px black;
 transition:0.50s;
@@ -153,14 +156,15 @@ transition:0.50s;
 
 nav ol li:hover
 {
-background:#f5f5f5;
+background:black;
 transform:scale(1.10);
+border-radius:15px;
 }
 
 
  /* Footer & Social Media Styling (From Images) Bottom Box*/
         footer {
-            background:#A9A9A9;
+            background:rgb(175, 175, 175);
             display: flex;
             flex-direction: column;
             text-align: center;
@@ -182,10 +186,9 @@ transform:scale(1.10);
 
 
 /* Link Text Styling */
-a:link{colour:yellow;text-decoration:none;}
-a:visited{colour:yellow;}
-a:hover{text-decoration:underline; colour:gray;}
-a:active{colour:orange;}
+a:link{color:rgb(255, 255, 255);text-decoration:none;}
+a:visited{color:rgb(255, 255, 255);}
+a:hover{text-decoration:none; color:#;}
 
 
  /* Media Queries */
