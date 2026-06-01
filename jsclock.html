@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<a href="jawascriptwork.html">
+<img src="images/arrow.png" style="width:2%" title= "click to close">
+</a>
+
+<style>
+#clock
+{
+    color: white;
+    background: rgb(80, 100, 150);
+    font-size: 40px;
+    width: 250px;
+    font-family: arial black;
+    padding: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(194, 194, 194);
+    margin:auto;
+    border-radius:30px;
+
+}
+
+</style>
+<body>
+    <h1>Date & Timer</h1>
+
+    <div id="clock">Date</div>
+    <button onclick="st()">Start </button>
+     <button  onclick="sto()">Stop </button>
+
+         <script>
+            function show()
+            {
+                var d = new Date()
+                var t = document.getElementById("clock")
+                t.innerHTML= d.toLocaleTimeString()
+
+            }
+
+var timer
+function st()
+{
+    timer=setInterval("show()",1000)
+}
+function sto()
+{ 
+    clearInterval(timer)
+}
+
+
+     </script>
+</body>
+</html>

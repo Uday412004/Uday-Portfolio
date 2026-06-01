@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<a href="jawascriptwork.html">
+<img src="images/arrow.png" style="width:2%" title= "click to close">
+</a>
+
+<style>
+    #box
+    {
+        margin:auto;
+        background:rgb(51, 49, 49);
+        width:800px;
+    }
+    .pic
+    {
+        width:100px;
+        height:100px;
+        margin:1px;
+        transition:0.50;
+        cursor:pointer;
+        position:relative;
+    }
+
+    #mask
+    {
+        background:100px;
+        width:100px;
+        height:130px;
+        background:rgb(5, 5, 5);
+        box-shadow:5px 5px 5px gray;
+        margin:auto;
+        overflow:hidden;
+    }
+
+    #slider
+    {
+        margin:1px;
+        width:99px;
+    }
+
+</style>
+<body>
+     <div id="mask">
+
+
+ <div id="box">
+
+    <img src="images/img6.jpeg" class="pic">
+    <img src="images/img1.jpeg" class="pic">
+    <img src="images/img2.jpeg" class="pic">
+    <img src="images/img3.jpeg" class="pic">
+    <img src="images/img4.jpeg" class="pic">
+    <img src="images/img5.jpeg" class="pic">
+    <img src="images/img7.jpeg" class="pic">
+
+    </div>
+    <input type = "range" min="0" max="600" id="slider" oninput="move()">
+    </div>
+
+
+
+
+<input type="color" oninput="document.body.style.background=this.value">
+<script>
+    function move()
+    {
+        var slider =document.getElementById("slider");
+        var box =document.getElementById("box"); 
+        box.style.marginLeft = -slider.value + "px";     
+    }
+    
+</script>
+    </body>
+</html>
