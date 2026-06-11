@@ -1,0 +1,106 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<a href="jawascriptwork.html">
+<img src="images/arrow.png" style="width:2%" title= "click to close">
+</a>
+
+<style>
+    header
+    {
+        width:60%;
+        height:500px;
+        margin:auto;
+        //box-shadow:5px 5px 5px gray;
+    }
+
+    header img
+    {
+        width:100%;
+        height:120%;
+    }
+
+h1
+{
+   text-align:center;
+   font-size:40px;
+   color:white;
+   background:black;
+}
+</style>
+<h1 id="m" >Image Of the </h1>
+<header>
+    <img id="pic" src="">
+</header>
+
+<body>
+    <script>
+        // Using Switch Statement
+        // syntax
+        var d= new Date();
+        var m= document.getElementById("m")
+        var pic= document.getElementById("pic")
+        pic.src="images/"
+        var today= d.getDay()
+
+
+        switch(today)
+        {
+            case 1 :
+            m.innerHTML+="Monday"
+            pic.src="images/space1.jpg"
+
+            break;
+
+
+            case 2 :
+            m.innerHTML+="Tuesday"
+            pic.src="images/space2.jpeg"
+
+            break;
+
+
+            case 3 :
+            m.innerHTML+="Wednesday"
+            pic.src="images/space3.jpeg"
+
+            break;
+
+
+            case 4 :
+            m.innerHTML+="Thursday"
+            pic.src="images/space4.jpg"
+
+            break;
+
+
+            case 5 :
+            m.innerHTML+="Friday"
+            pic.src="images/space5.jpeg"
+
+            break;
+
+
+            case 6 :
+            m.innerHTML+="Saturday"
+            pic.src="images/space6.webp"
+
+            break;
+
+             case 0 :
+            m.innerHTML+="Sunday"
+            pic.src="images/space0.jpg"
+
+            default:
+            pic.src="images/"
+        }
+
+        document.title="Ready"
+    </script>
+</body>
+</html>
