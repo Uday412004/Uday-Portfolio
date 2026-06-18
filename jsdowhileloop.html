@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<a href="jawascriptwork.html">
+<img src="images/arrow.png" style="width:2%" title= "click to close">
+</a>
+
+<body>
+     <!--
+    <h1><a href="ddata.pdf"> Download File</a></h1>
+        -->
+
+        <script> 
+
+            /*Working With Do While Loop */
+            // Post Tested Loop
+
+            var pw = "loop@123"
+            var response;
+            var turn = 0
+
+            var turn = 0
+              do
+              {
+
+
+                response = prompt("Enter loop@123 to Download...")
+
+                if(response==pw)
+              {
+                alert("✔ Valid Password")
+                document.write("<h1><a href='ddata.pdf'>Down Load File</a></h1>")
+                     break;
+              }
+
+
+
+              if(turn>=3)
+              {
+                 alert("❌Access Denied....")         
+              }
+
+
+              turn++
+
+              }
+
+              while(turn<=3)
+
+              document.title="Ready"
+
+
+        </script>
+        
+</body>
+</html>
