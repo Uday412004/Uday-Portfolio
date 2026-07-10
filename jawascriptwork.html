@@ -190,6 +190,39 @@ a:hover{text-decoration:none; color:#;}
         }
 
 
+
+
+
+/* Card Container */
+ .card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+
+/* Card Design */
+.card {
+  animation: zoom 0.6s ease-out;
+  background: rgb(175, 175, 175);
+  padding: 90px 50px;
+  border-radius: 10px;
+  font-size: 30px;
+  transition: 0.3s;
+  text-decoration: none;
+  text-align:center;
+  margin-top:30px;
+}
+
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-10px);
+  background: #9fd0ec;
+  box-shadow:6px 6px 6px gray;
+}
+
+
 </style>
 </head>
 <body>
@@ -214,97 +247,59 @@ a:hover{text-decoration:none; color:#;}
 
 <main>
 
-
-
-
-<a href="jsbasic.html">
-<img src="images/error.jpg" class="picstyle">
-</a>
-
-<a href="jscreateelement.html">
-<img src="images/elements.jpg" class="picstyle">
-</a>
-
-<a href="creatediv.html">
-<img src="images/creatediv.jpg" class="picstyle">
-</a>
-
-<a href="color.html">
-<img src="images/color.jpg" class="picstyle">
-</a>
-
-<a href="input_elements.html">
-<img src="images/inputelements.jpg" class="picstyle">
-</a>
-
-<a href="usinglib.html">
-<img src="images/usinglib.jpg" class="picstyle">
-</a>
-
-<a href="jsloop.html">
-<img src="images/loop.jpg" class="picstyle">
-</a>
-
- <a href="jsloopimages.html">
-<img src="images/loopimages.jpg" class="picstyle">
-</a>        
-
-<a href="jscolorauto.html">
-<img src="images/colorautochange.jpg" class="picstyle">
-</a>
-
-<a href="jscolormanually.html">
-<img src="images/colormanually.jpg" class="picstyle">
-</a>         
-
-
-<a href="jsclock.html">
-<img src="images/clock.jpg" class="picstyle">
-</a>
-
-
-<a href="jsslider&color_input_event.html">
-<img src="images/slideinputevent.jpg" class="picstyle">
-</a>
-
-
-<a href="jswhileloop2.html">
-<img src="images/loopcolorbox.jpg" class="picstyle">
-</a>
-
-<a href="jscreatepopup.html">
-<img src="images/createpopup.jpg" class="picstyle">
-</a>
-
-<a href="jswhileloop3.html">
-<img src="images/whileloop3.jpg" class="picstyle">
-</a>
-         
-<a href="jsdowhileloop.html">
-<img src="images/dowhileloop.jpg" class="picstyle">
-</a>
-
-<a href="jschangebanner.html">
-<img src="images/changebanner.jpg" class="picstyle">
-</a>
-         
- <a href="jsopenmenu.html">
-<img src="images/openmenu.jpg" class="picstyle">
-</a>
-
-<a href="jsdraw1.html">
-<img src="images/draw.jpg" class="picstyle">
-</a>
-
-
-<a href="jsdraw2.html">
-<img src="images/draw2.jpg" class="picstyle">
-</a>
-
          
 
-         
+
+  <div class="card-container">
+
+    
+    <a href="jsbasic.html" class="card">Basic</a>
+
+    <a href="jscreateelement.html" class="card">Create Element</a>
+
+    <a href="creatediv.html" class="card">Create Div</a>
+
+    <a href="color.html" class="card">Color</a>
+
+    <a href="input_elements.html" class="card">Input Elements</a>
+
+    <a href="usinglib.html" class="card">Using Lib</a> 
+
+    <a href="jsloop.html" class="card">Loop</a>
+
+    <a href="jsloopimages.html" class="card">Loop Images</a>
+
+    <a href="jscolorauto.html" class="card">Color Auto</a>
+
+    <a href="jscolormanually.html" class="card">Color Manually</a>
+
+    <a href="jsclock.html" class="card">Clock</a>
+
+    <a href="jsslider&color_input_event.html" class="card">Slider & Color Input Event</a>
+
+    <a href="jswhileloop2.html" class="card">While Loop 2</a>
+
+    <a href="jscreatepopup.html" class="card">Create Popup</a>
+
+    <a href="jswhileloop3.html" class="card">While Loop 3</a>
+
+    <a href="jsdowhileloop.html" class="card">Do While Loop</a>
+
+    <a href="jschangebanner.html" class="card">Change Banner</a>
+
+    <a href="jsopenmenu.html" class="card">Open Menu</a>
+
+    <a href="jsdraw1.html" class="card">Draw 1</a>
+
+     <a href="jsdraw2.html" class="card">Draw 2</a>
+
+
+
+  
+  </div>
+
 </main>
+
 
 </body>
 
