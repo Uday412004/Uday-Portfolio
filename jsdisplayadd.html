@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<a href="jawascriptwork.html">
+<img src="images/arrow.png" style="width:2%" title= "click to close">
+</a>
+
+<style>
+    @keyframes movecar
+    {
+        from{left:100%;}
+        to{left:-150%;}
+    }
+</style>
+
+    
+</body onLoad="check()">
+<h1>Showing Add After A Particular Time Of Inactive Browser</h1>
+
+
+
+<script>
+    c=0
+    function check()
+    {
+        c++
+        document.title=c
+        t=setTimeout("check()",100)
+
+        if(c>=20){document.bgColor="yellow"}
+        if(c>=60){document.bgColor="white"}
+        if(c==15){if(car!=null){document.body.removeChild(car)};showadd1()}
+    }
+
+
+    car=null
+    function resettimer()
+
+    {
+        document.bgColor="white"
+        clearTimeout(t)
+        c=0
+        t=setTimeout("check()",200)
+    }
+
+    document.onmousemove=resettimer
+    document.onkeypress=resettimer
+
+function showadd1()
+{
+    car=document.createElement("img")
+    car.src="images/car1.gif"
+    w = window.innerWidth
+    car.style="cursor:pointer;width:200px;height:100px;position:absolute;left:-200px;top:50%;"
+
+    document.body.appendChild(car)
+
+    car.style.left=w+200+"p"
+    <car.onmouseover=function()
+    {
+        car.style.animationPlayState="paused"
+    }
+
+    car.onclick = function()
+    {
+        //document.location = "car1.html"
+    }
+
+    car.onmouseout = function()
+    {
+        car.style.animationPlayState="running"
+    }
+
+
+    car.style.animation="movecar 20s"
+
+    document.title ="add1"
+
+}
+
+</script>
+
+</body>
+</html>
