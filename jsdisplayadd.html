@@ -20,7 +20,7 @@
 </style>
 
     
-</body onLoad="check()">
+<body onLoad="check()">
 <h1>Showing Add After A Particular Time Of Inactive Browser</h1>
 
 
@@ -31,10 +31,10 @@
     {
         c++
         document.title=c
-        t=setTimeout("check()",100)
+        t=setTimeout("check()",200)
 
-        if(c>=20){document.bgColor="yellow"}
-        if(c>=60){document.bgColor="white"}
+        if(c>=20){document.bgColor="lightblue"}
+        if(c>=60){document.bgColor="lightblue"}
         if(c==15){if(car!=null){document.body.removeChild(car)};showadd1()}
     }
 
@@ -46,7 +46,7 @@
         document.bgColor="white"
         clearTimeout(t)
         c=0
-        t=setTimeout("check()",200)
+        t=setTimeout("check()",500)
     }
 
     document.onmousemove=resettimer
@@ -55,14 +55,14 @@
 function showadd1()
 {
     car=document.createElement("img")
-    car.src="images/car1.gif"
+    car.src="images/car1.png"
     w = window.innerWidth
-    car.style="cursor:pointer;width:200px;height:100px;position:absolute;left:-200px;top:50%;"
+    car.style="cursor:pointer;width:250px;height:60px;position:absolute;left:-200px;top:50%;"
 
     document.body.appendChild(car)
 
-    car.style.left=w+200+"p"
-    <car.onmouseover=function()
+    car.style.left=w+200+"px"
+    car.onmouseover=function()
     {
         car.style.animationPlayState="paused"
     }
