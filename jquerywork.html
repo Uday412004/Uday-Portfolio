@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+
+
+<header>
+
+<h2><font colour="black"face="arial">J Query</font></h2>
+
+</header>
+
+
+
+<title>J Query</title>
+
+
+<style>
+
+/*practice work heading*/
+
+header
+{ 
+width:95%;
+background:#33395c;
+color:white;
+font-size:50px;
+box-shadow:5px 5px 5px gray;
+font-family:Arial black;
+text-align:center;
+padding:10px;
+margin:auto;
+margin-bottom:20px;
+border-radius:30px
+}
+
+
+.picstyle
+{
+width:400px;
+height:300px;
+margin:40px;
+box-shadow:5px 5px 5px gray;
+border-radius:40px;
+transition:0.60s;
+}
+
+
+.picstyle:hover
+{
+transform:scale(1.1) scale(1.1); //Rotate:(360deg);
+border-radius:50px
+}
+
+
+main
+{
+width:80%;
+margin:auto;
+}
+
+
+header
+{
+background://#000000;
+
+//height:300px;
+display:flex;
+//flex-direction:column;
+flex-direction:row;
+//justify-content:end;
+//justify-content:start;
+//justify-content:centre;end;
+justify-content: space-between;
+flex-wrap:wrap;
+
+}
+
+header {
+         border: 0px black solid;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         flex-wrap: wrap;
+        }
+
+/*main {
+        display: flex;
+        flex-wrap: wrap;/*
+        }
+
+
+
+
+
+/* home,practice,project,behance Navigation Styles */
+nav
+{
+width:100%;
+margin: 30px auto;
+padding:1px;
+background:#33395c;
+text-align: center;
+//display:flex;
+//justify-content:space-between;
+box-shadow:2px 3px 4px gray;
+}
+
+
+nav ol li /* top Home,practice,project,behance BOX */
+{
+list-style:none;
+//background:linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(255, 237, 237, 1) 0%, rgba(255, 225, 173, 1) 100%);
+
+margin-right: 60px;
+padding: 10px;
+text-align: center;
+cursor:pointer;
+box-shadow:0px 0px 0px black;
+transition:0.50s;
+}
+
+nav ol li:hover
+{
+background:black;
+transform:scale(1.10);
+border-radius:15px;
+}
+
+
+ /* Footer & Social Media Styling (From Images) Bottom Box*/
+        footer {
+            background: #33395c;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 50px;
+            clear: both;
+            list-style:none;
+            color:white;
+        }
+
+        footer #info, #sitemap, #socialmedia {
+            width: 100%;
+            padding: 0px;
+        }
+
+        #sitemap ul li, #socialmedia ul li {
+            list-style: none;
+            text-align: left;
+            margin-left: 48%;
+        }
+
+
+/* Link Text Styling */
+a:link{color:rgb(255, 255, 255);text-decoration:none;}
+a:visited{color:rgb(255, 255, 255);}
+a:hover{text-decoration:none; color:#;}
+
+
+ /* Media Queries background colour */ 
+        @media only screen and (max-width: 600px) {
+            body { background: linear-gradient(90deg, //#fcff9e 0%, //#c67700 100%);}
+
+            #col2 { display: none; }
+            header { justify-content: center; }
+            .cardstyle { margin: 40px auto auto auto; }
+            nav ol li { display: block; }
+        }
+
+        @media only screen and (min-width: 600px) {
+            body { background: //yellow; }
+            #col2 { width: 70%; }
+            #col1 { width: 100px; height: 40px; }
+            main { justify-content: center; }
+            .cardstyle { width: 40%; margin: 10px; }
+            nav ol li { display: inline; }
+        }
+
+        @media only screen and (min-width: 768px) {
+            body { background: //pink; }
+            #col1 { width: 15%; height: 120px; }
+            #col2 { height: 200px; }
+            .cardstyle { width: 20%; margin: 10px; }
+        }
+
+        @media only screen and (min-width: 992px) {
+            body { background: linear-gradient(100deg, //#fcff9e 0%, //#c67700 100%); }
+            #col2 { width: 100%; height: 400px; margin: auto; }
+            #col1 { display: none; }
+        }
+
+
+
+
+
+/* Card Container */
+ .card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+
+/* Card Design */
+.card {
+  animation: zoom 0.6s ease-out;
+  background: #7d6a1b;
+  padding: 90px 50px;
+  border-radius: 10px;
+  font-size: 30px;
+  transition: 0.3s;
+  text-decoration: none;
+  text-align:center;
+  margin-top:30px;
+}
+
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-10px);
+  background: #33395c;     /*#9fd0ec*/
+  box-shadow:4px 4px 4px gray;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<nav>
+
+
+</div>
+<div id="sitemap">
+<ol>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="https://www.youtube.com/@designedbyuday/featured">Youtube</a></li>
+      <li><a href="practicepage.html">Html/Css</a></li>
+      <li><a href="jawascriptwork.html">Java Script</a></li>
+      <li><a href="https://www.behance.net/uday13">Behance</a></li>
+      <li><a href="#info">Contact</a></li>
+
+
+</ol>
+</nav>
+
+
+<main>
+
+         
+
+
+  <div class="card-container">
+
+    
+    <a href="" class="card"></a>
+
+    <a href="" class="card"></a>
+
+    <a href="" class="card"></a>
+
+    <a href="" class="card"></a>
+
+    <a href="" class="card"></a>
+
+    <a href="" class="card"></a> 
+
+    <a href="" class="card"></a>
+
+    <a href="" class="card"></a>
+
+
+
+  
+  </div>
+
+</main>
+
+
+</body>
+
+<footer>
+
+
+ <div id="info">
+            <h1>All Rights Reserved <sup>&reg;</sup></h1>
+        </div>
+
+        <div id="socialmedia">
+           
+                <summary>Social Media</summary>
+                <ul>
+
+                    <li><a href="https://www.youtube.com/@designedbyuday/featured"><img src="images/youtube.png" alt="Youtube" style="width:30px"></a></li>
+
+
+                    <li><a href="https://www.instagram.com/designedbyuday/"><img src="images/instagram.png" alt="Instagram" style="width:30px;"></a></li>
+
+                    <li><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook" style="width:30px;"></a></li>
+
+                    <li><a href="https://x.com/"><img src="images/x.png" alt="Twitter" style="width:32px" height="30px"></a></li>
+
+                </ul>
+            
+        </div>
+
+
+</footer>
+
+
+</html>
